@@ -1,0 +1,17 @@
+﻿<Window x:Class="TrackerUI.TournamentDashboardForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+        Title="TournamentDashboardForm" Height="206" Width="240">
+    <Grid>
+        <Label x:Name="headerLabel" Content="Tournament Dashboard:" HorizontalAlignment="Center" Width="148" Height="27" VerticalAlignment="Top" Margin="0,2,0,0"/>
+        <Label x:Name="loadExistingTournamentLabel" Content="Load Existing Tournament" Height="27" VerticalAlignment="Top" HorizontalAlignment="Center" Width="148" Margin="0,23,0,0"/>
+        <ComboBox x:Name="loadExistingTournamentDropDown" Margin="0,55,0,0" HorizontalAlignment="Center" Width="136" Height="24" VerticalAlignment="Top" SelectedIndex="0"/>
+        <Button x:Name="loadExistingTournamentButton" Content="Load Tournament" Margin="0,84,0,0" HorizontalAlignment="Center" Width="136" Height="28" VerticalAlignment="Top" Click="loadExistingTournamentButton_Click"/>
+        <Button x:Name="createTournamentButton" Content="Create Tournament" HorizontalAlignment="Center" Margin="0,117,0,0" VerticalAlignment="Top" Height="29" Width="136" Click="createTournamentButton_Click"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿<Application x:Class="TrackerUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TrackerUI">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
+    
+<!-- StartupUri="TournamentDashboardForm.xaml" Add after line 4 if nec-->

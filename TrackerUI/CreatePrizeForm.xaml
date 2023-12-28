@@ -1,0 +1,22 @@
+﻿<Window x:Class="TrackerUI.CreatePrizeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+        Title="CreatePrizeForm" Height="261" Width="285">
+    <Grid>
+        <Label x:Name="headerLabel" Content="Create Prize:" HorizontalAlignment="Left" Width="92" Height="27" VerticalAlignment="Top"/>
+        <Label x:Name="placeNumberLabel" Content="Place Number" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="101" Margin="0,27,0,0"/>
+        <TextBox x:Name="placeNumberValue" TextWrapping="Wrap" Text="" Width="120" Margin="106,30,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="placeNameLabel" Content="Place Name" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="101" Margin="0,56,0,0"/>
+        <TextBox x:Name="placeNameValue" TextWrapping="Wrap" Text="" Width="120" Margin="106,59,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="prizeAmountLabel" Content="Prize Amount" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="101" Margin="0,85,0,0"/>
+        <TextBox x:Name="prizeAmountValue" TextWrapping="Wrap" Text="0" Width="120" Margin="106,88,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="prizePercentageLabel" Content="Prize Percentage" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="101" Margin="0,130,0,0"/>
+        <TextBox x:Name="prizePercentageValue" TextWrapping="Wrap" Text="0" Width="120" Margin="106,133,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="orLabel" Content="-or-" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="38" Margin="21,108,0,0" Foreground="#FF0010FF"/>
+        <Button x:Name="createPrizeButton" Content="Create Prize" Margin="0,162,0,0" HorizontalAlignment="Center" Width="221" Height="27" VerticalAlignment="Top" Click="createPrizeButton_Click"/>
+    </Grid>
+</Window>

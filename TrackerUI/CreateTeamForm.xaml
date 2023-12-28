@@ -1,0 +1,31 @@
+﻿<Window x:Class="TrackerUI.CreateTeamForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackerUI"
+        mc:Ignorable="d"
+        Title="CreateTeamForm" Height="456" Width="510">
+    <Grid>
+        <Label x:Name="headerLabel" Content="Create Team:" HorizontalAlignment="Left" Width="92" Height="27" VerticalAlignment="Top"/>
+        <Label x:Name="teamNameLabel" Content="Team Name" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="0,27,0,0"/>
+        <TextBox x:Name="teamNameValue" TextWrapping="Wrap" Text="" Width="162" Margin="5,54,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="selectTeamMemberLabel" Content="Select Team Member" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="0,76,0,0"/>
+        <ComboBox x:Name="selectTeamMemberDropDown" Margin="5,103,0,0" HorizontalAlignment="Left" Width="162" Height="22" VerticalAlignment="Top" SelectedIndex="0"/>
+        <Button x:Name="addMemeberButton" Content="Add Member" Margin="5,137,0,0" HorizontalAlignment="Left" Width="162" Height="27" VerticalAlignment="Top" Click="addMemeberButton_Click"/>
+        <GroupBox x:Name="addNewMemberGroupBox" Header="Add New Member" Margin="0,169,0,0" HorizontalAlignment="Left" Width="234" Height="170" VerticalAlignment="Top"/>
+        <Label x:Name="firstNameLabel" Content="First Name" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="3,189,0,0"/>
+        <TextBox x:Name="firstNameValue" TextWrapping="Wrap" Text="" Width="120" Margin="108,192,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="lastNameLabel" Content="Last Name" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="3,218,0,0"/>
+        <TextBox x:Name="lastNameValue" TextWrapping="Wrap" Text="" Width="120" Margin="108,221,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="emailAddressLabel" Content="Email" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="3,247,0,0"/>
+        <TextBox x:Name="emailAddressValue" TextWrapping="Wrap" Text="" Width="120" Margin="108,250,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label x:Name="cellPhoneNumberLabel" Content="Cell Phone" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="165" Margin="3,276,0,0"/>
+        <TextBox x:Name="cellPhoneNumberValue" TextWrapping="Wrap" Text="" Width="120" Margin="108,279,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="createMemeberButton" Content="Create Member" Margin="6,306,0,0" HorizontalAlignment="Left" Width="222" Height="27" VerticalAlignment="Top" Click="createMemberButton_Click"/>
+        <Button x:Name="createTeamButton" Content="Create Team" Margin="139,344,0,0" HorizontalAlignment="Left" Width="191" Height="27" VerticalAlignment="Top" Click="createTeamButton_Click"/>
+        <ListBox x:Name="teamMembersListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="239,30,0,0" HorizontalAlignment="Left" Width="222" Height="273" VerticalAlignment="Top"/>
+        <Button x:Name="removeSelectedButton" Content="Remove Selected Member" Margin="239,306,0,0" HorizontalAlignment="Left" Width="222" Height="27" VerticalAlignment="Top" Click="removeSelectedMemberButton_Click"/>
+
+    </Grid>
+</Window>

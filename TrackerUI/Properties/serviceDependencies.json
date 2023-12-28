@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Server=Yoni-laptop;Database=Tournaments;Trusted_Connection=True;",
+      "dynamicId": null
+    }
+  }
+}
